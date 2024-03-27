@@ -8,153 +8,154 @@
 </head>
 
 <body>
+    <!-- Introduction to inline and block elements -->
     <div>
         <h2>HTML inline elements</h2>
         <p>An inline element only takes up as much width as necessary.</p>
-        <!-- An inline element does not start on a new line An inline element only takes up as much width as necessary. -->
-        <span style="background-color: rgb(11, 11, 11); color: #fdfdfd;">THis is inline element</span>
+        <!-- Example of an inline element -->
+        <span style="background-color: rgb(11, 11, 11); color: #fdfdfd;">This is an inline element</span>
         <h2>HTML block elements</h2>
         <p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin)
-            before and after the element.
-
-            A block-level element always takes up the full width available (stretches out to the left and right as far
-            as it can).
-            <br>
-
-            Two commonly used block elements are: "div" (a container for grouping other HTML elements) and "p" (a
-            paragraph of text ) <br />
+            before and after the element.</p>
+        <!-- Example of a block-level element -->
         <div style="background-color: black; color: white;"> THIS TEXT IS IN BLOCK ELEMENT IN A DIV </div>
     </div>
-    </div>
+
+    <!-- Introduction to HTML lists -->
     <div>
         <h1>HTML Lists</h1>
-        HTML lists allow web developers to group a set of related items in lists. <br>
-        There are two types of list - ordered (also known as numbered) and unordered
+        <p>HTML lists allow web developers to group a set of related items in lists.</p>
+        <!-- Ordered List -->
         <h4>Ordered List</h4>
-        An ordered list is created by using the &lt;ol&gt; tag. The numbers for each item are automatically added by the
-            browser. <br>
-            <ol>
-                <ol>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                  </ol>
-            </ol>
-            <h4>Unordered List</h4> 
-            An unordered list is created by using the &lt;ul&gt; tag.<br>
-            <ul>
-                <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-            </ul>
+        <p>An ordered list is created by using the &lt;ol&gt; tag. The numbers for each item are automatically added by the
+            browser.</p>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <!-- Unordered List -->
+        <h4>Unordered List</h4>
+        <p>An unordered list is created by using the &lt;ul&gt; tag.</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
     </div>
+
+    <!-- Introduction to dl, dd, and dt elements -->
     <div>
-        User
-<h1>The dl, dd, and dt elements</h1>
+        <h1>The dl, dd, and dt elements</h1>
+        <p>These three elements are used to create a description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+        <!-- Explanation of dl, dd, and dt elements -->
+        <dl>
+            <dt>&lt;dl&gt;:</dt>
+            <dd>This is the description list container. It's used to enclose the entire list.</dd>
 
-<p>These three elements are used to create a description list:</p>
+            <dt>&lt;dt&gt;:</dt>
+            <dd>Stands for "definition term." It's used to define the term or name in the description list.</dd>
 
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl> 
-
-<dl>
-    <dt>&lt;dl&gt;:</dt>
-    <dd>This is the description list container. It's used to enclose the entire list.</dd>
-    
-    <dt>&lt;dt&gt;:</dt>
-    <dd>Stands for "definition term." It's used to define the term or name in the description list.</dd>
-    
-    <dt>&lt;dd&gt;:</dt>
-    <dd>Stands for "definition description." It's used to provide the description or definition for the corresponding term defined by the &lt;dt&gt; element.</dd>
-  </dl>
-  
+            <dt>&lt;dd&gt;:</dt>
+            <dd>Stands for "definition description." It's used to provide the description or definition for the corresponding term defined by the &lt;dt&gt; element.</dd>
+        </dl>
     </div>
+
+    <!-- Introduction to Tables -->
     <div style="font-size: large;">
         <h1>Tables</h1>
+        <!-- Example of a basic table -->
         <table>
             <tr>
-              <th>Company</th>
-              <th>Contact</th>
-              <th>Country</th>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
             </tr>
             <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
             </tr>
-          </table>
-          <br>
-          <table>
+        </table>
+        <br>
+        <!-- Another example of a basic table -->
+        <table>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
-            </tr>
-            <tr>
-              <td>Jill</td>
-              <td>Smith</td>
-              <td>50</td>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
             </tr>
             <tr>
-              <td>Eve</td>
-              <td>Jackson</td>
-              <td>94</td>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
             </tr>
-          </table>
-          <br>
-          <table>
-  <tr>
-    <th colspan="2">Name</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>43</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>57</td>
-  </tr>
-</table>
-<style>
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <h2>Cell that spans two columns</h2>
-    <p>To make a cell span more than one column, use the colspan attribute.</p>
-    
-    <table style="width:100%">
-      <tr>
-        <th colspan="2">Name</th>
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>43</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>57</td>
-      </tr>
-    </table>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        <br>
+        <!-- Example of a table with a colspan attribute -->
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>57</td>
+            </tr>
+        </table>
+        <!-- CSS style for tables -->
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </div>
+
+    <!-- Cell that spans two columns -->
+    <div>
+        <h2>Cell that spans two columns</h2>
+        <p>To make a cell span more than one column, use the colspan attribute.</p>
+        <table style="width:100%">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>57</td>
+            </tr>
+        </table>
     </div>
 </body>
 
