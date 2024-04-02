@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 05</title>
+</head>
+<body>
+<!-- What is CSS?
+  CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the visual presentation of a web page written in HTML (Hypertext Markup Language).
+HTML creates the structure of the page, while CSS adds styling to that structure. This tutorial assumes that you have prior knowledge of HTML. If that's not the case, you can follow the HTML tutorial first. -->
 
+<!-- Why the word "cascade"?
+The term "cascade" refers to the priority scheme determining which CSS rules are applied when multiple rules target an element. This scheme takes into account specificity and inheritance, ensuring that the most specific and latest rules are applied. -->
+
+  <!-- Why use CSS?
+CSS is used to provide styling to HTML elements, making web pages visually appealing and user-friendly. -->
+
+  <!-- Analogy to Understand CSS
+Imagine reading a book with only plain text. It's quite dull, isn't it? Now picture a book enriched with different colors, fonts, and styles. That's what CSS does to a webpage. -->
+
+<!-- How does CSS work?
+CSS operates by selecting HTML elements and applying styles to them. Styles dictate the appearance of elements on a webpage. You can target HTML elements, classes, or IDs, defining properties like colors, fonts, margins, etc.
+
+/* Example of a CSS rule */
+selector {
+    property: value;
+} -->
+
+
+
+
+  
+<!-- How CSS works?
+We wrote our first CSS style but still, things wouldn’t be very much clear. Let’s look at how CSS works on the DOM model.
+
+How CSS Works?
+The following steps will help us understand more about CSS working :
+
+The user types the URL and clicks enter.
+The browser makes a fetch request to the server.
+HTML is fetched from the server.
+HTML is converted into a DOM. In the DOM, each tag is considered a node.
+The browser fetches all the related files and assets that are linked to that HTML, such as external CSS, fonts, images, etc.
+The browser then parses the CSS and groups it based on the selectors, which can be tags.
+Each CSS is attached to its respective node. In this phase, CSS gets attached to its respective node. This is called a render tree.
+The render tree is the well-structured, well-arranged DOM node that will appear on the screen.
+The well-structured, custom-designed website is presented on the screen. This is called painting. -->
+
+
+
+
+<!-- Syntax of CSS
+CSS follows a rule-based structure. Each rule consists of a selector and a declaration block. Selectors pick the HTML elements, while declaration blocks contain pairs of properties and values.
+
+The general syntax for writing CSS.
+
+selector {
+    property: value;
+}
+Note: Semi-colon (;) at the end of each new property and property value is IMPORTANT.
+
+For example:
+
+h2{
+    color: blue;
+}
+In the example:
+
+h2: h2 is the selector.
+color: It's the property.
+blue: The property value.
+cwh tutorial image
+
+Within the declaration block, there can be multiple pairs of properties and values.
+
+Consider the example:
+
+button{
+    color: white;
+    background-color: black;
+    border: transparent;
+    border-radius: 5px;
+}
+Here, 'button' is the selector, and there are multiple pairs of properties and values. Each pair is separated by a semicolon ";". -->
+
+
+<!-- Ways to add CSS
+There are three different ways to add CSS to an HTML page, which are:
+
+Inline CSS
+Internal CSS
+External CSS -->
+
+
+<!-- Inline CSS
+Inline CSS is used to add custom properties to specific elements. The added style will only reflect on that particular element only.
+
+To use inline CSS, Insert the "style" attribute within the HTML element's opening tag.
+
+Consider the code snippet:
+
+<h1 style="color: purple;">I'm Student</h1>
+<h2>I'm student </h2> -->
+
+
+<!-- Internal CSS
+Internal CSS is used to apply custom style to the multiple elements on the same page. The style can be used throughout the HTML page.
+
+Internal CSS is defined in a style block, which will be inside the head section.
+Consider the code snippet:
+
+<head>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ABZ</h1>
+    <p>I'm ABZ, from ABX</p>
+    <p>I'm a Developer and founder of ABZ.com</p>
+</body>
+
+</html> -->
+
+
+
+<!-- External CSS
+External CSS works similarly to internal CSS but with a twist. Instead of adding the styles within the HTML file, we create a separate file with .css extension. This file will hold all the styling details. Then, we link this file to the HTML page, giving it the instructions on how to look. 
+
+There is a new <link> tag in the head section, and this link tag has rel and href properties.
+
+The following points will explain each keyword's meaning: 
+
+<link>: This tag is used to create links between different resources, like stylesheets, fonts, and more. In our case, we are using a link tag to link the CSS file with the HTML file.
+rel="stylesheet": rel stands for relationship,  this defines the type of relationship between the HTML document and the linked resource. When set to "stylesheet", it specifies that the linked resource is a stylesheet that will be used to style the HTML content.
+href="style.css" : The href attribute stands for "hypertext reference." It specifies the path or URL to the external resource we want to link. In this case, it's the path to the external CSS file called "style.css".
+Consider the code snippets:
+
+<html lang="en">
+
+<head>
+    <title>ABZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>I'm AZ, from ABX</p>
+    <p>I'm a Developer and founder of ABZ.com</p>
+</body>
+
+</html>
+p{
+    color: red;
+}-->
+
+
+
+<!-- CSS Selectors
+What are CSS Selectors?
+CSS selectors allow us to choose specific elements and apply styles to them. Suppose we want to add a custom style to only a specific tag(s). There, We can make use of CSS selector. 
+
+There are different types of CSS selectors, which are as follows:
+
+Universal Selector
+Element Selector
+Id Selector
+Class Selector
+Group Selector
+Let's look into these selectors one by one -->
+
+
+<!-- Universal Selector
+Universal selector represented by "*" targets all the HTML elements on the page.
+
+The syntax of Universal Selector is as follows:
+
+* {
+    property : value;
+} -->
+
+
+  
+
+<!-- Element Selector (Type Selector)
+The element selector selects the target element based on the specific type. Suppose you want to underline all the <p> tags; in this case, the element selector will be the best choice.
+
+The syntax of Element Selector is as follows:
+
+p {
+    property : value;
+}
+A selector can be any HTML tag. Here, we have considered the p tag.
+
+Consider the code snippet:
+
+<html>
+
+<head>
+    <title>CSS</title>
+    <style>
+        p{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CodeWithHarry</h1>
+    <h2>we offer: </h2>
+    <p>Python Tutorials - 100 Days of Code</p>
+    <p>Ultimate JavaScript Course</p>
+    <p>React JS Tutorials For Beginners</p>
+</body>
+</html> -->
+
+
+
+<!-- ID Selector
+The ID selector targets the elements based on the specific ID. It is written with the hash “#” character followed by the ID name in the style sheet.
+
+The syntax of ID Selector is as follows:
+
+#ID {
+    property : value;
+} -->
+
+
+<!-- Class Selector
+The class selector does the same job as the id selector, a class selector helps group various types of elements. Suppose, we want to give a custom style to a specific group of elements. In this case, the class selector is the best option.
+
+It is written with the period “.” character followed by the class name in the style sheet.
+
+The syntax of Class Selector is as follows:
+
+.class {
+    property : value;
+} -->
+
+
+
+  <!-- Group Selector
+The group selector is used to minimise the code. Commas "," are used to separate each selector in a grouping. This reduces the number of lines of code. The code also looks clean.
+
+The syntax of Group Selector is as follows:
+
+div, p, a {
+    property : value;
+} -->
+
+
+
+</body>
+</html>
