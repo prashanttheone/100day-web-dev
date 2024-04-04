@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 08</title>
+    <style>
+        /* Styles for .marigin */
+        .marigin {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            height: 30px;
+            color: aliceblue;
+            background: #000;
+            text-align: center;
+        }
+
+        /* Styles for headings h1 and h2 */
+        h1, h2 {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Arial;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .nav {
+            background-color: #333; /* Background color */
+            height: 30px;
+        }
+
+        .nav ul {
+            list-style-type: none; /* Remove bullet points */
+            text-align: center; /* Align items horizontally */
+        }
+
+        .nav ul li {
+            display: inline-block; /* Display items horizontally */
+            margin: 0 10px; /* Add some space between items */
+        }
+
+        .nav ul li a {
+            text-decoration: none; /* Remove underline */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Add padding to make clickable area larger */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .nav ul li a:hover {
+            background-color: #325ba7d7; /* Change background color on hover */
+        }
+
+        /* Text shadow effect */
+        .text-shadow {
+            font-size: 48px; /* Adjust font size as needed */
+            color: #6f5f5f; /* Text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                         -2px -2px 4px rgba(255, 255, 255, 0.5);
+            /* Multiple shadows to create a 3D effect */
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding:40px 5px 8px 0px;
+            z-index: 1;
+            margin-top:40px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Styles for the red rectangle */
+        .p {
+            background: #b64949;
+            min-width: 80px;
+            min-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section> 
+        <!-- Navbar with hover effect -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Text shadow effect -->
+        <h1 class="text-shadow">Text-shadow effect!</h1>
+
+        <!-- CSS outline -->
+        <h2>CSS Outline</h2>
+        <p>This element has a 2px black border and a green outline with a width of 10px.</p>
+        
+        <!-- About margin -->
+        <h1>Margin</h1>
+        <div class="marigin">
+            <!-- Add content here -->
+        </div>
+    </section>
+    
+    <!-- CSS dropdown -->
+    <div class="dropdown">
+        <span class="p">Mouse over me</span>
+        <div class="dropdown-content">
+            <p>link 1</p>
+            <p>link 2</p>
+            <p>link 3</p>
+            <p>link 4</p>
+        </div>
+    </div>
+</body>
+</html>
