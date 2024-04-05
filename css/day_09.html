@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 09</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .list,
+        .link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Styles for the cursor demo */
+        .wait {
+            cursor: wait;
+        }
+
+        .zoom-in {
+            cursor: zoom-in;
+        }
+
+        .zoom-out {
+            cursor: zoom-out;
+        }
+
+
+        /* Styles for the list demo */
+        ol,
+        ul {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        ol {
+            background: #ff9999;
+        }
+
+        ul {
+            background: #3399ff;
+        }
+
+        ol li,
+        ul li {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        /* Styles for links and buttons */
+        .link-demo {
+            margin-top: 40px;
+        }
+
+        .link-demo a {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .link-demo a:hover {
+            background-color: red;
+        }
+
+        /* Styles for the overflow container */
+        .overflow-container {
+            /* width: 300px;
+            height: 200px; */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Flex container styles */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        /* Subdiv with overflow styles */
+        .subdiv {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #999;
+            overflow: hidden;
+        }
+
+        /* Styles for different overflow behaviors */
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .overflow-xy {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .overflow-x {
+            overflow-x: scroll;
+        }
+
+        .overflow-y {
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container cursor-demo">
+        <!-- Cursors in CSS -->
+        <h1>Cursors in CSS</h1>
+        <p class="alias">alias</p>
+        <p class="all-scroll">all-scroll</p>
+        <p class="auto">auto</p>
+        <p class="wait">wait</p>
+        <p class="zoom-in">zoom-in</p>
+        <p class="zoom-out">zoom-out</p>
+        <!-- Add other cursor classes here -->
+    </div>
+
+    <div class="list">
+        <!-- Styling Lists With Colors -->
+        <h1>Styling Lists With Colors</h1>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ol>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+    </div>
+
+    <div class="link-demo">
+        <!-- Links and Buttons -->
+        <h1>Links and Buttons</h1>
+        <p>A link styled as a button:</p>
+        <a href="https://www.google.com/" target="_blank">This is a link</a>
+    </div>
+    <!-- over flow -->
+    <div class="overflow-container">
+        <h1>css over flow</h1>
+        <!-- Main flex container -->
+        <div class="flex-container">
+          <!-- Subdivs with different overflow behaviors -->
+          <div class="subdiv overflow-scroll">
+            This content has scrollable overflow both horizontally and vertically.
+            This content has scrollable overflow both horizontally and vertically.
+        
+          </div>
+          <div class="subdiv overflow-auto">
+            This content has auto overflow, which means it will scroll only if necessary.
+            This content has auto overflow, which means it will scroll only if necessary.
+            This content has auto overflow, which means it will scroll only if necessary.
+          </div>
+          <div class="subdiv overflow-xy">
+            This content hides overflow horizontally but allows scrolling vertically.
+            This content hides overflow horizontally but allows scrolling vertically.
+            This content hides overflow horizontally but allows scrolling vertically.
+          </div>
+          <div class="subdiv overflow-x">
+            This content hides overflow vertically but allows scrolling horizontally.
+            This content hides overflow vertically but allows scrolling horizontally.
+            This content hides overflow vertically but allows scrolling horizontally.
+          </div>
+          <div class="subdiv overflow-y">
+            This content has scrollable overflow only vertically.
+            This content has scrollable overflow only vertically.
+            This content has scrollable overflow only vertically.
+            This content has scrollable overflow only vertically.
+
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
