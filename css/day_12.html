@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day_12.css"> <!-- Link to external CSS file -->
+    <title>Day 12</title>
+</head>
+<body>
+    <h1>grid layout</h1>
+    
+    <!-- Wrapper for grid layout -->
+    <div class="wrapper">
+        <div class="one">One</div> <!-- Grid item 1 -->
+        <div class="two">Two</div> <!-- Grid item 2 -->
+        <div class="three">Three</div> <!-- Grid item 3 -->
+        <div class="four">Four</div> <!-- Grid item 4 -->
+        <div class="five">Five</div> <!-- Grid item 5 -->
+        <div class="six">Six</div> <!-- Grid item 6 -->
+    </div>
+
+    <br>
+    <br>
+    
+    <!-- Aside section with custom styles -->
+    <aside class="custom-aside">
+        <!-- Flex container within the aside -->
+        <div class="custom-flex-container">
+            <!-- Color circles container -->
+            <div class="custom-color-circles">
+                <div class="custom-circle custom-red"></div> <!-- Red circle -->
+                <div class="custom-circle custom-yellow"></div> <!-- Yellow circle -->
+                <div class="custom-circle custom-green"></div> <!-- Green circle -->
+            </div>
+            <p class="custom-text-sm">bash</p> <!-- Text "bash" -->
+        </div>
+        
+        <!-- Additional content section -->
+        <div class="custom-mt-4">
+            <p class="custom-text-green">$ npm install next</p> <!-- Green text -->
+            <p class="custom-text-white">+ next@10.2.3</p> <!-- White text -->
+            <p class="custom-text-white">added 1 package, and audited 2 packages in 3s</p> <!-- White text -->
+            <p class="custom-text-green">$</p> <!-- Green text -->
+        </div>
+    </aside>
+
+    <br>
+    <br>
+    
+    <!-- Flex container for additional content -->
+    <div class="flex">
+        <!-- Custom gradient background div -->
+        <div class="custom-div">
+            <h2>This is a Gradient Background Div</h2> <!-- Heading -->
+            <p>Here is some content inside the div.</p> <!-- Paragraph -->
+        </div>
+        
+        <!-- Product card -->
+        <div class="card">
+            <div class="card__content"></div> <!-- Card content -->
+            <div class="blob"></div> <!-- Blob shape -->
+            <div class="blob"></div> <!-- Blob shape -->
+            <div class="blob"></div> <!-- Blob shape -->
+            <div class="blob"></div> <!-- Blob shape -->
+        </div>
+        
+        <!-- Detailed product card -->
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div> <!-- Card image -->
+            <div class="card-title">Product title</div> <!-- Card title -->
+            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div> <!-- Card subtitle -->
+            <hr class="card-divider"> <!-- Horizontal divider -->
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 123.45</div> <!-- Product price -->
+                <button class="card-btn">
+                    <!-- Shopping cart icon (SVG) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path>
+                        <path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                        <path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                        <path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
