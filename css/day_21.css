@@ -1,0 +1,111 @@
+/* Select the navbar container */
+.container{
+    display: flex;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.88); /* Set background color to black */
+    color: white; /* Set text color to white */
+    /* padding: 10px; */
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+    width:  18%; /* Set the container width */
+    height: 100vh;
+    margin-left: 5%;
+}
+
+/* Style the h1 inside navbar */
+.navbar h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 24px; /* Set font size */
+    background-color: black; /* Set background color to black */
+    color: white;
+}
+
+/* Style the navigation items list */
+.nav-items {
+    background-color: rgba(28, 28, 28, 0.418);
+    list-style-type: none; 
+    padding: 20px;
+}
+
+/* Style each list item */
+.nav-items li {
+    text-align: start;
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 16px; /* Set font size */
+    padding-bottom: 8px;
+    padding-top: 8px;
+    box-shadow: 0 2px 4px rgba(105, 103, 103, 0.1);
+    margin-bottom: 4px;
+    
+}
+.nav-items li i{
+    margin: 5px;
+}
+
+.social-icons {
+    margin-left: 10px;
+    margin-top: 200px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; 
+    justify-content: space-around;
+
+}
+
+.social-icons li {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 18px;
+    color: white; 
+    position: relative; 
+    transition: transform 0.3s ease-out; 
+}
+.social-icons li:hover {
+    transform: translateY(-9px); 
+    box-shadow: 0 0 30px rgba(69, 202, 255, 0.7); 
+
+}
+
+/* Reset the transform when not hovered */
+.social-icons li:not(:hover) {
+    transform: translateY(0);
+}
+
+.span-item{
+    display: flex;
+    flex-direction: column;
+    width:  100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .sd{
+  width: 100hv;
+  height: auto;
+  color: black;
+  font-size: 80px;
+  font-weight: 800;
+  font-family:  sans-serif;
+}
+.men{
+    width: 100hv;
+    background: #000;
+    height: auto;
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+    font-family:  sans-serif;
+    margin-bottom: 2px;
+}
+.ht{
+    width: 100hv;
+    height: auto;
+    color: black;
+    font-size: 80px;
+    font-weight: 700;
+    font-family:  sans-serif;
+
+    border: 8px solid black;
+}
