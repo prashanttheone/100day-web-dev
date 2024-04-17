@@ -82,15 +82,13 @@ p{
     height: 150px;
     transform: skewX(10deg) skewY(10deg);
     border-radius: 10px;
-    /* Adjust box shadow properties as needed (color, offsets, blur, spread) */
-    box-shadow: 60px 60px 8px rgba(189, 178, 178, 0.804); /* Example box shadow */
 
     /* Animation properties */
-    animation: rotation 5s;
-    animation-timing-function: linear; /* Linear timing function */
-    animation-direction: alternate; /* Alternate direction (forward and backward) */
-    animation-fill-mode: forwards; /* Apply animation's end state after animation */
-    animation-iteration-count: infinite; /* Infinite looping */
+    animation: rotation 3s;
+    animation-timing-function: linear; 
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite; 
 }
 
 @keyframes rotation {
@@ -101,4 +99,7 @@ p{
         transform: rotate3d(1, 1, 1, -15deg);
     }
 }
-
+.second:hover {
+    animation: none;
+    transform: scale(1.2);
+}
