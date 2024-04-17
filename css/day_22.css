@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #27292c;
+    color: white;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+    margin: 20px;
+}
+.login{
+  background-color:hsl(223, 6%, 24%) ;
+  height: 764px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:  8%;
+  border-radius: 10px;
+  margin-right: -5px;
+}
+.cloudimg{
+    height: 113.525px;
+    width: 289px;
+}
+h1{
+    color: white;
+    font-family:"Sofia Pro", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom:  40px;
+    margin-top: 60px;
+}
+#email ,#password,  .submit {
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.submit{
+    background-color: #008DFF;
+    text-align: center;
+    font-size: 16px;
+    
+}
+label{
+    color: white;
+    align-items: self-start;
+    opacity: 0.8;
+}
+input{
+    background-color: #27292c;
+}
+p{
+    color:rgba(255, 255, 255, 0.4);
+}
+.label{
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ margin-bottom: -5%;
+}
+
+.poster {
+    border-radius: 10px;
+    background-image: url("https://static.cloud.blackmagicdesign.com/assets/img/auth_background.jpg");
+    background-repeat: no-repeat;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: auto; 
+    gap: 100px; 
+}
+
+.second {
+    width: 250px;
+    height: 150px;
+    transform: skewX(10deg) skewY(10deg);
+    border-radius: 10px;
+    /* Adjust box shadow properties as needed (color, offsets, blur, spread) */
+    box-shadow: 60px 60px 8px rgba(189, 178, 178, 0.804); /* Example box shadow */
+
+    /* Animation properties */
+    animation: rotation 5s;
+    animation-timing-function: linear; /* Linear timing function */
+    animation-direction: alternate; /* Alternate direction (forward and backward) */
+    animation-fill-mode: forwards; /* Apply animation's end state after animation */
+    animation-iteration-count: infinite; /* Infinite looping */
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate3d(1, 1, 1, 15deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, -15deg);
+    }
+}
+
